@@ -1,20 +1,20 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Saas Landing Page',
+    title: 'SmartRelax',
     htmlAttrs: {
-      lang: 'en',
+      lang: 'de',
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      { hid: 'description', name: 'description', content: 'Terminvergaben waren noch nie so einfach! - Erweitern Sie mit uns Ihre Erreichbarkeit und schaffen Sie ein einfaches und unkompliziertes Prozedere' },
       { name: 'format-detection', content: 'telephone=no' },
       {
         hid: 'description',
         name: 'description',
         content:
-          'Saas landing pages design is very important in order to convert visitors into leads or customers [https://uikit.to/saas-landing-pages/]',
+          'Terminvergaben waren noch nie so einfach! - Erweitern Sie mit uns Ihre Erreichbarkeit und schaffen Sie ein einfaches und unkompliziertes Prozedere',
       },
       {
         hid: 'og:image',
@@ -78,4 +78,6 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
+
+  target: 'static'
 }

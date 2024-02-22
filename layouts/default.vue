@@ -67,7 +67,7 @@ export default {
         {
           name: "Kontaktieren",
           to: '/contact',
-          class: 'btn-primary btn rounded-lg text-white ml-1'
+          class: 'btn-primary btn-sm rounded-lg text-white ml-1'
         }
       ]
     }
