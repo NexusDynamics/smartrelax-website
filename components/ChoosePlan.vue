@@ -1,28 +1,29 @@
 <template>
   <b-container class="pt-5" id="plans">
     <div class="d-flex flex-column pt-5">
-      <h2 class="mx-auto">
+      <h2 class="mx-auto text-center">
         Wählen Sie Ihr Abomodell<br>nach Ihren Bedürfnissen aus
       </h2>
-      <b-col lg="3" md="4" sm="10" cols="12" class="mx-auto">
+
+      <div class="d-flex mx-auto">
         <div
           class="bg-white p-2 rounded-lg d-flex justify-content-between align-items-center font-weight-bold shadow-lg"
         >
           <b-button
             variant="outline-primary"
-            class="rounded-lg btn-lg"
+            class="rounded-lg btn-lg mr-1"
             :class="(planMode === 'month') ? 'btn-primary text-white' : 'btn-light text-primary'"
             @click="changePlan('month')"
-            >Monatlich</b-button>
+          >Monatlich</b-button>
           <b-button
             variant="outline-primary"
-            class="rounded-lg btn-lg"
+            class="rounded-lg btn-lg ml-1"
             :class="(planMode === 'year') ? 'btn-primary text-white' : 'btn-light text-primary'"
             @click="changePlan('year')"
           >Jährlich</b-button
           >
         </div>
-      </b-col>
+      </div>
 
       <b-row class="mx-lg-5 mt-5">
         <b-col v-for="plan in plans" :key="plan.name" cols="12" lg="4" md="4" sm="12" class="mt-2">
@@ -59,7 +60,7 @@
 
                 <span class="ml-2">{{feature}}</span>
               </div>
-              <b-button block class="rounded-lg btn-white shadow-sm text-primary"
+              <b-button block class="rounded-lg btn-white shadow-sm text-primary py-3 mt-2"
               >{{ plan.btn.text }}</b-button
               >
             </div>
