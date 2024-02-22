@@ -1,4 +1,10 @@
 export default {
+  target: 'server',
+  axios: {
+    baseURL: process.env.NODE_ENV === 'dev'
+      ? 'http://localhost:3000'
+      : 'https://digirelax.de'
+  },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'SmartRelax',
@@ -85,11 +91,22 @@ export default {
         theme_color: '#ffffff',
       },
     ],
-    '@nuxtjs/sitemap'
+    '@nuxtjs/axios',
+    ['nuxt-mail', {
+      message: {
+        to: 'info@digirelax.de'
+      },
+      smtp: {
+        host: "web312.dogado.net",
+        port: 465,
+        auth: {
+          user: 'info@digirelax.de',
+          pass: 'd9in3Ke7!',
+        },
+      }
+    }]
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
-
-  target: 'static'
 }
