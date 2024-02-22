@@ -11,6 +11,18 @@ export default {
       { hid: 'description', name: 'description', content: 'Terminvergaben waren noch nie so einfach! - Erweitern Sie mit uns Ihre Erreichbarkeit und schaffen Sie ein einfaches und unkompliziertes Prozedere' },
       { name: 'format-detection', content: 'telephone=no' },
       {
+        name: 'author',
+        content: 'SmartRelax'
+      },
+      {
+        name: 'copyright',
+        content: 'SmartRelax'
+      },
+      {
+        name: 'robots',
+        content: 'index,follow'
+      },
+      {
         hid: 'description',
         name: 'description',
         content:
@@ -24,11 +36,11 @@ export default {
       {
         hid: 'og:title',
         name: 'og:title',
-        content: 'Saas Landing Page',
+        content: 'SmartRelax',
       },
       {
         name: 'og:site_name',
-        content: 'web developer',
+        content: 'SmartRelax',
       },
       {
         prefix: 'og: https://ogp.me/ns#',
@@ -37,7 +49,7 @@ export default {
         hid: 'og:description',
         name: 'og:description',
         content:
-          'Saas landing pages design is very important in order to convert visitors into leads or customers [https://uikit.to/saas-landing-pages/]',
+          'Terminvergaben waren noch nie so einfach! - Erweitern Sie mit uns Ihre Erreichbarkeit und schaffen Sie ein einfaches und unkompliziertes Prozedere',
       },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
@@ -62,18 +74,18 @@ export default {
       'nuxt-social-meta',
       {
         url: '',
-        title: 'Saas Landing Page',
-        site_name: 'Sass Landing Page',
+        title: 'SmartRelax',
+        site_name: 'SmartRelax',
         description:
-          'Saas landing pages design is very important in order to convert visitors into leads or customers [https://uikit.to/saas-landing-pages/]',
+          'Terminvergaben waren noch nie so einfach! - Erweitern Sie mit uns Ihre Erreichbarkeit und schaffen Sie ein einfaches und unkompliziertes Prozedere',
         img: 'thumb.png',
         img_size: { width: '800px', height: '600px' },
-        locale: 'en_US',
-        twitter: '@silvesterwali',
-        twitter_card: 'Saas Landing Page',
+        locale: 'de_DE',
+        twitter_card: 'SmartRelax',
         theme_color: '#ffffff',
       },
     ],
+    '@nuxtjs/sitemap'
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
